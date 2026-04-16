@@ -1,0 +1,21 @@
+/* Minimal print/layout tuning for BABP docs */
+video {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keep tables and callouts cleaner in export */
+table {
+  width: 100%;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  page-break-inside: avoid;
+}

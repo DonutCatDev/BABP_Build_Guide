@@ -1,0 +1,92 @@
+site_name: BABP Assembly Instructions
+site_description: Comprehensive assembly guide for the BABP blaster.
+site_url: ""
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - glightbox
+  - exporter:
+      formats:
+        pdf:
+          enabled: true
+          concurrency: 1
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+
+extra_css:
+  - stylesheets/extra.css
+
+# AUTO-GENERATED NAV START
+nav:
+  - Home: index.md
+  - Master Materials: materials/index.md
+  - Assembly:
+      - Customization Options:
+          - Overview: assembly/customization-options/index.md
+      - Stock/Magwell Assembly:
+          - Overview: assembly/stock-magwell/index.md
+          - Materials: assembly/stock-magwell/materials.md
+          - Slides: assembly/stock-magwell/slides.md
+      - Shroud Assembly:
+          - Overview: assembly/shroud/index.md
+          - Materials: assembly/shroud/materials.md
+          - Variants:
+              - Railgun Variant: assembly/shroud/railgun.md
+              - Bipod Variant: assembly/shroud/bipod.md
+              - Bipod Sub-Assembly: assembly/shroud/bipod-sub-assembly.md
+          - Slides: assembly/shroud/slides.md
+      - Gear Tensioner Assembly:
+          - Overview: assembly/gear-tensioner/index.md
+          - Materials: assembly/gear-tensioner/materials.md
+          - Slides: assembly/gear-tensioner/slides.md
+      - Receiver Assembly:
+          - Overview: assembly/receiver/index.md
+          - Materials: assembly/receiver/materials.md
+          - Slides: assembly/receiver/slides.md
+      - Prime Block Assembly:
+          - Overview: assembly/prime-block/index.md
+          - Materials: assembly/prime-block/materials.md
+          - Variants:
+              - Common Assembly: assembly/prime-block/common-assembly.md
+              - Bolt Action Assembly: assembly/prime-block/bolt-action.md
+              - Straight Pull Assembly: assembly/prime-block/straight-pull.md
+              - Dual Straight Pull Assembly: assembly/prime-block/dual-straight-pull.md
+          - Slides: assembly/prime-block/slides.md
+      - Core Assembly:
+          - Overview: assembly/core/index.md
+          - Materials: assembly/core/materials.md
+          - Variants:
+              - Plunger Sub-Assembly: assembly/core/plunger-sub-assembly.md
+              - Final Assembly: assembly/core/final-assembly.md
+          - Slides: assembly/core/slides.md
+      - Loader Assembly:
+          - Overview: assembly/loader/index.md
+          - Materials: assembly/loader/materials.md
+          - Slides: assembly/loader/slides.md
+      - Turnaround Assembly:
+          - Overview: assembly/turnaround/index.md
+          - Materials: assembly/turnaround/materials.md
+          - Slides: assembly/turnaround/slides.md
+      - Final Assembly:
+          - Overview: assembly/final/index.md
+          - Materials: assembly/final/materials.md
+          - Slides: assembly/final/slides.md
+      - Troubleshooting:
+          - Overview: assembly/troubleshooting/index.md
+      - Tuning/Maintenance:
+          - Overview: assembly/tuning-maintenance/index.md
+# AUTO-GENERATED NAV END
