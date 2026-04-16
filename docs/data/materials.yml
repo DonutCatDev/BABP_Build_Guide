@@ -1,0 +1,29 @@
+components:
+  StockButt:
+  StockButtBackplate:
+  ReleaseNub:
+  Magwell:
+
+hardware:
+  screw_6_32_5_8_phillips:
+    label: "6-32 5/8\" Phillips Screw"
+  spring_0_625:
+    label: "0.625\" Compression Spring"
+
+consumables:
+  superglue:
+    label: "Superglue"
+
+sections:
+  stock-magwell:
+    base:
+      components:
+        - StockButt
+        - StockButtBackplate
+        - ReleaseNub
+        - Magwell
+      hardware:
+        - screw_6_32_5_8_phillips: 2
+        - spring_0_625: 1
+      consumables:
+        - superglue
