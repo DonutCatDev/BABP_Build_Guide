@@ -1,13 +1,10 @@
 # Troubleshooting
 
 ## Scope
-This section will collect common failure modes, root-cause checks, and corrective actions.
+This is the troubleshooting section, have some simple filler below until it's filled out.
 
 ## Initial Checks
-- Confirm barrel is fully seated and locked.
-- Confirm core orientation is correct and catch engagement is positive.
-- Confirm o-rings are present, lubricated, and not damaged.
-- Confirm fasteners are tight but not overtorqued into printed threads.
+- Confirm barrel is fully seated.
 
 ## In Progress
-Detailed troubleshooting matrices will be expanded from the reference source.
+Most of it is.

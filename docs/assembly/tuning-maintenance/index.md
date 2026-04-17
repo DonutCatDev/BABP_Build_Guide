@@ -1,13 +1,11 @@
 # Tuning and Maintenance
 
 ## Scope
-This section covers seal tuning, friction reduction, periodic inspection, and service intervals.
+This section is because you can tune a piano but you can't tuna fish.
 
 ## Initial Guidance
-- Keep sliding interfaces clean and lightly lubricated.
-- Re-check barrel seal drag after major disassembly.
-- Inspect semi-consumables (for example catch bearings) regularly.
+- Lube.
 - De-tension the blaster when stored long-term.
 
 ## In Progress
-Detailed tuning procedures will be expanded from the reference source.
+More wip, wow big surprise.
