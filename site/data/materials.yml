@@ -36,6 +36,34 @@ components:
   SideGear:
   OuterGear:
   InnerGear:
+  PrimeBlock:
+  PumpBars:
+  CatchLever:
+  Barrel:
+  Bearing_623:
+  HandleHead:
+  PlungerHead:
+  CatchTube:
+  CatchEnd:
+  SpringBase:
+  Spring:
+  Catch:
+  CatchBearing:
+  Pusher:
+  TransferBar:
+  TransferBarAdapter:
+  Turnaround:
+  TubeHolder:
+  TubeHolderInsert:
+  PlungerTube:
+  BodyBars:
+  TubeSpacer:
+  ReceiverAssembly:
+  CoreAssembly:
+  MidBody:
+  GearTensionerAssembly:
+  QuickReleasePin:
+  SCAR:
 
 hardware:
   screw_6_32_5_8_phillips:
@@ -72,6 +100,20 @@ hardware:
     label: "6-32 Phillips Screw, 5/16 inch"
   thumbscrew_6_32:
     label: "6-32 Thumbscrew"
+  m3_socket_head_8mm:
+    label: "M3 Socket Head Screw, 8 mm"
+  screw_6_32_2in_phillips:
+    label: "6-32 Phillips Head Screw, 2 inch"
+  oring_127:
+    label: "127 O-Ring"
+  oring_016:
+    label: "016 O-Ring"
+  screw_1_4_20_3_8:
+    label: "1/4-20 Screw, 3/8 inch"
+  oring_202:
+    label: "202 O-Ring"
+  quick_release_pin:
+    label: "Quick-Release Pin"
 
 consumables:
   superglue:
@@ -193,3 +235,110 @@ sections:
         components:
           - RG_MainBody
           - RGB_MainBody
+
+  prime-block:
+    base:
+      components:
+        - PrimeBlock
+        - PumpBars
+        - CatchLever
+        - Barrel
+        - Bearing_623
+      hardware:
+        - m3_socket_head_8mm: 7
+        - dowel_3_32_quarter: 1
+    variants:
+      bolt-action:
+        components:
+          - HandleHead
+        hardware:
+          - nut_6_32: 4
+          - screw_6_32_phillips: 4
+          - screw_6_32_socket_head: 4
+          - screw_6_32_2in_phillips: 4
+
+      straight-pull:
+        components:
+          - HandleHead
+        hardware:
+          - nut_6_32: 4
+          - screw_6_32_phillips: 4
+          - screw_6_32_socket_head: 4
+          - screw_6_32_2in_phillips: 4
+
+      dual-straight-pull:
+        components:
+          - HandleHead
+        hardware:
+          - nut_6_32: 4
+          - screw_6_32_phillips: 4
+          - screw_6_32_socket_head: 4
+          - screw_6_32_2in_phillips: 4
+
+  core:
+    base:
+      components:
+        - PlungerHead
+        - CatchTube
+        - CatchEnd
+        - SpringBase
+        - Spring
+        - Catch
+        - CatchLever
+        - CatchBearing
+      hardware:
+        - heat_set_insert_6_32: 4
+        - screw_6_32_socket_head: 8
+        - screw_6_32_phillips: 4
+        - spring_0_625: 1
+        - oring_127: 2
+        - oring_016: 1
+      consumables:
+        - loctite
+        - lubricant_light
+
+  loader:
+    base:
+      components:
+        - Pusher
+        - TransferBar
+        - TransferBarAdapter
+      hardware:
+        - screw_1_4_20_3_8: 1
+        - oring_202: 1
+        - screw_6_32_socket_head: 2
+
+  turnaround:
+    base:
+      components:
+        - Turnaround
+        - TubeHolder
+        - TubeHolderInsert
+        - PlungerTube
+      hardware:
+        - oring_016: 1
+        - oring_127: 1
+      consumables:
+        - superglue
+        - lubricant_light
+
+  final:
+    base:
+      components:
+        - BodyBars
+        - TubeSpacer
+        - ReceiverAssembly
+        - CoreAssembly
+        - MidBody
+        - Barrel
+        - GearTensionerAssembly
+      hardware:
+        - quick_release_pin: 2
+      consumables:
+        - lubricant_light
+    variants:
+      scar:
+        components:
+          - SCAR
+        hardware:
+          - oring_016: 2

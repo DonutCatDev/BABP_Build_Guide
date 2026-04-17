@@ -38,6 +38,34 @@
 - SideGear
 - OuterGear
 - InnerGear
+- PrimeBlock
+- PumpBars
+- CatchLever
+- Barrel
+- Bearing_623
+- HandleHead
+- PlungerHead
+- CatchTube
+- CatchEnd
+- SpringBase
+- Spring
+- Catch
+- CatchBearing
+- Pusher
+- TransferBar
+- TransferBarAdapter
+- Turnaround
+- TubeHolder
+- TubeHolderInsert
+- PlungerTube
+- BodyBars
+- TubeSpacer
+- ReceiverAssembly
+- CoreAssembly
+- MidBody
+- GearTensionerAssembly
+- QuickReleasePin
+- SCAR
 
 ## Hardware
 - 6-32 5/8" Phillips Screw
@@ -56,6 +84,13 @@
 - 6-32 Socket Head Bolt, 5/8 inch
 - 6-32 Phillips Screw, 5/16 inch
 - 6-32 Thumbscrew
+- M3 Socket Head Screw, 8 mm
+- 6-32 Phillips Head Screw, 2 inch
+- 127 O-Ring
+- 016 O-Ring
+- 1/4-20 Screw, 3/8 inch
+- 202 O-Ring
+- Quick-Release Pin
 
 ## Consumables
 - Superglue
