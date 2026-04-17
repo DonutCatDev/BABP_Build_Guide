@@ -1,6 +1,6 @@
 site_name: BABP Assembly Instructions
 site_description: Comprehensive assembly guide for the BABP blaster.
-site_url: ""
+site_url: "https://donutcat.org/BABP_Build_Guide/"
 
 theme:
   name: material

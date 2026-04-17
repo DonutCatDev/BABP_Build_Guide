@@ -1,2 +1,4 @@
 # Ignore GitHub metadata and workflow files
-.github/
+# Keep workflows committed so GitHub Pages can build and deploy MkDocs.
+.github/copilot-workbench.md
+.github/prompts/
