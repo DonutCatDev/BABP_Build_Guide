@@ -3,16 +3,83 @@ components:
   StockButtBackplate:
   ReleaseNub:
   Magwell:
+  RG_MainBody:
+  RG_Base:
+  RG_TopSupportBar:
+  RG_BottomSupportBar:
+  RG_BottomRail:
+  RGB_MainBody:
+  RGB_Base:
+  RGB_Insert:
+  RGB_TopSupportBar:
+  RGB_BottomSupportBar:
+  BipodCore:
+  RightLeg:
+  LeftLeg:
+  RightLockNub:
+  LeftLockNub:
+  BipodCap:
+  BipodButton:
+  BipodSubAssembly:
+  Receiver:
+  Trigger:
+  Sear:
+  Grip:
+  TriggerGuard:
+  FrontConnectorCap:
+  FrontConnectorBase:
+  TensionerBlock:
+  NutCap:
+  LockBlock:
+  LockBlockCap:
+  BarrelGear:
+  SideGear:
+  OuterGear:
+  InnerGear:
 
 hardware:
   screw_6_32_5_8_phillips:
     label: "6-32 5/8\" Phillips Screw"
   spring_0_625:
     label: "0.625\" Compression Spring"
+  screw_6_32_socket_head:
+    label: "6-32 Socket Head Screw"
+  screw_6_32_phillips:
+    label: "6-32 Phillips Screw"
+  heat_set_insert_6_32:
+    label: "6-32 Heat Set Insert"
+  dowel_3_32:
+    label: "3/32 inch Dowel"
+  spring_bipod_lock:
+    label: "Bipod Lock Spring"
+  dowel_3_32_quarter:
+    label: "3/32 inch Dowel"
+  ptfe_tube_8mm:
+    label: "8 mm PTFE Tube"
+  dowel_3_32_3_4:
+    label: "3/32 inch Dowel, 3/4 inch"
+  nut_10_32:
+    label: "10-32 Nut"
+  screw_10_32_1_1_4_oval:
+    label: "10-32 Oval Head Screw, 1-1/4 inch"
+  washer_generic:
+    label: "Washer"
+  nut_6_32:
+    label: "6-32 Nut"
+  bolt_6_32_5_8_socket:
+    label: "6-32 Socket Head Bolt, 5/8 inch"
+  screw_6_32_5_16_phillips:
+    label: "6-32 Phillips Screw, 5/16 inch"
+  thumbscrew_6_32:
+    label: "6-32 Thumbscrew"
 
 consumables:
   superglue:
     label: "Superglue"
+  loctite:
+    label: "Loctite"
+  lubricant_light:
+    label: "Light Lubricant"
 
 sections:
   stock-magwell:
@@ -27,3 +94,102 @@ sections:
         - spring_0_625: 1
       consumables:
         - superglue
+
+  shroud:
+    base:
+      hardware:
+        - screw_6_32_socket_head: 0
+        - screw_6_32_phillips: 0
+    variants:
+      railgun:
+        components:
+          - RG_MainBody
+          - RG_Base
+          - RG_TopSupportBar
+          - RG_BottomSupportBar
+          - RG_BottomRail
+        hardware:
+          - screw_6_32_phillips: 3
+          - screw_6_32_socket_head: 5
+
+      bipod-sub-assembly:
+        components:
+          - BipodCore
+          - RightLeg
+          - LeftLeg
+          - RightLockNub
+          - LeftLockNub
+          - BipodCap
+          - BipodButton
+        hardware:
+          - screw_6_32_socket_head: 2
+          - screw_6_32_phillips: 1
+          - dowel_3_32: 2
+          - spring_bipod_lock: 1
+
+      bipod:
+        components:
+          - RGB_MainBody
+          - RGB_Base
+          - RGB_Insert
+          - RGB_TopSupportBar
+          - RGB_BottomSupportBar
+          - BipodSubAssembly
+        hardware:
+          - heat_set_insert_6_32: 1
+          - screw_6_32_phillips: 1
+          - screw_6_32_socket_head: 6
+        consumables:
+          - loctite
+
+  receiver:
+    base:
+      components:
+        - Receiver
+        - Trigger
+        - Sear
+        - Grip
+        - TriggerGuard
+      hardware:
+        - screw_6_32_phillips: 2
+        - dowel_3_32_quarter: 3
+        - spring_0_625: 1
+        - ptfe_tube_8mm: 2
+      consumables:
+        - superglue
+    variants:
+      dual-window:
+        hardware:
+          - dowel_3_32_quarter: 1
+
+  gear-tensioner:
+    base:
+      components:
+        - FrontConnectorCap
+        - FrontConnectorBase
+        - TensionerBlock
+        - NutCap
+        - LockBlock
+        - LockBlockCap
+        - BarrelGear
+        - SideGear
+        - OuterGear
+        - InnerGear
+      hardware:
+        - dowel_3_32_3_4: 2
+        - nut_10_32: 2
+        - screw_10_32_1_1_4_oval: 1
+        - heat_set_insert_6_32: 1
+        - washer_generic: 1
+        - nut_6_32: 2
+        - bolt_6_32_5_8_socket: 2
+        - screw_6_32_5_16_phillips: 4
+        - thumbscrew_6_32: 2
+      consumables:
+        - superglue
+        - lubricant_light
+    variants:
+      shroud-selection:
+        components:
+          - RG_MainBody
+          - RGB_MainBody
