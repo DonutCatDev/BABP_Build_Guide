@@ -12,14 +12,14 @@ The Turnaround redirects airflow from the plunger tube into the barrel and must 
 - Insert TubeHolderInsert into the front side of TubeHolder.
 - Test-fit PlungerTube in the rear of TubeHolder, then remove the tube.
 
-![Bond tube holder insert](../../media/turnaround/bond-tube-holder-insert_picture1.png)
+![Bond tube holder insert](../../media/other/placeholder.webp)
 
 ### Step 2: Install turnaround o-rings
 - Install a 016 o-ring in the inside groove of Turnaround.
 - Install a 127 o-ring in the outer central groove of Turnaround.
 - Ensure both o-rings are fully seated and not twisted.
 
-![Install turnaround o-rings](../../media/turnaround/install-turnaround-o-rings_picture1.png)
+![Install turnaround o-rings](../../media/other/placeholder.webp)
 
 ### Step 3: Seat plunger tube on turnaround
 - Clean PlungerTube interior of debris.
@@ -27,4 +27,4 @@ The Turnaround redirects airflow from the plunger tube into the barrel and must 
 - Verify o-ring remains fully captured and not buckled.
 - Use a small amount of lubricant only if needed to help seating.
 
-![Seat plunger tube](../../media/turnaround/seat-plunger-tube-on-turnaround_picture1.png)
+![Seat plunger tube](../../media/other/placeholder.webp)

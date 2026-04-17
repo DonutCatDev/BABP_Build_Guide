@@ -12,17 +12,17 @@ The Loader Assembly moves with the core to load a dart and maintain a seal into 
 - Tune tightness so the seal is airtight in the Turnaround while still allowing smooth priming.
 - Bolt action usually tolerates a looser seal; straight pull generally needs a tighter seal.
 
-![Set pusher seal](../../media/loader/set-pusher-seal_picture1.png)
+![Set pusher seal](../../media/other/placeholder.webp)
 
 ### Step 2: Fit transfer bar adapter
 - Test-fit TransferBarAdapter onto the front of TransferBar.
 - Confirm it seats flush in the cutout and can be removed/reinstalled smoothly.
 - Sand or tolerance-tune as needed.
 
-![Fit transfer bar adapter](../../media/loader/fit-transfer-bar-adapter_picture1.png)
+![Fit transfer bar adapter](../../media/other/placeholder.webp)
 
 ### Step 3: Attach pusher to transfer bar
 - Install Pusher onto TransferBar with two 6-32 socket head screws.
 - Keep pusher on the same side as the TransferBarAdapter center cutout.
 
-![Attach pusher to transfer bar](../../media/loader/attach-pusher-to-transfer-bar_picture1.png)
+![Attach pusher to transfer bar](../../media/other/placeholder.webp)

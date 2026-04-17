@@ -15,9 +15,9 @@ Assemble one of the front shroud variants for your BABP build. This section cove
 ### Step 1: Choose a Variant
 Select either the railgun variant or the railgun bipod variant before starting hardware installation.
 
-![variant-selection](../../media/shroud/choose-variant_picture1.png)
+![variant-selection](../../media/other/placeholder.webp)
 
 ### Step 2: Complete the Matching Variant Page
 Follow the linked variant page in full before continuing to Receiver Assembly.
 
-![variant-complete](../../media/shroud/complete-variant_picture1.png)
+![variant-complete](../../media/other/placeholder.webp)
