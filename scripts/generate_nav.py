@@ -16,15 +16,10 @@ PRIMARY_PAGE_ORDER = {
     "instructions.md": 2,
 }
 
-SECONDARY_PAGE_ORDER = {
-    "slides.md": 90,
-}
-
 PAGE_LABELS = {
     "index.md": "Overview",
     "materials.md": "Materials",
     "instructions.md": "Instructions",
-    "slides.md": "Slides",
 }
 
 SECTION_TITLES = {
@@ -52,15 +47,6 @@ SPECIAL_PAGE_LABELS = {
     "dual-straight-pull": "Dual Straight Pull Assembly",
     "plunger-sub-assembly": "Plunger Sub-Assembly",
     "final-assembly": "Final Assembly",
-    "slides-railgun": "Railgun Slides",
-    "slides-bipod": "Bipod Slides",
-    "slides-bipod-sub-assembly": "Bipod Sub-Assembly Slides",
-    "slides-common-assembly": "Common Assembly Slides",
-    "slides-bolt-action": "Bolt Action Slides",
-    "slides-straight-pull": "Straight Pull Slides",
-    "slides-dual-straight-pull": "Dual Straight Pull Slides",
-    "slides-plunger-sub-assembly": "Plunger Sub-Assembly Slides",
-    "slides-final-assembly": "Final Assembly Slides",
 }
 
 SECTION_ORDER = [
@@ -115,12 +101,8 @@ def section_sort_key(path: Path) -> tuple[int, str]:
 def page_sort_key(path: Path) -> tuple[int, str]:
     if path.name in PRIMARY_PAGE_ORDER:
         return (PRIMARY_PAGE_ORDER[path.name], path.name)
-    if path.name in SECONDARY_PAGE_ORDER:
-        return (SECONDARY_PAGE_ORDER[path.name], path.name)
     if is_variant_page(path):
         return (20, path.name)
-    if is_slide_page(path):
-        return (95, path.name)
     return (50, path.name)
 
 
@@ -145,7 +127,6 @@ def build_nav_lines() -> list[str]:
 
             primary_pages = [p for p in md_files if p.name in PRIMARY_PAGE_ORDER]
             variant_pages = [p for p in md_files if is_variant_page(p)]
-            slide_pages = [p for p in md_files if is_slide_page(p)]
 
             for page in primary_pages:
                 rel = page.relative_to(DOCS).as_posix()
@@ -156,16 +137,6 @@ def build_nav_lines() -> list[str]:
                 for page in variant_pages:
                     rel = page.relative_to(DOCS).as_posix()
                     lines.append(f"              - {page_label(page)}: {rel}")
-
-            if slide_pages:
-                if len(slide_pages) == 1 and slide_pages[0].name == "slides.md":
-                    rel = slide_pages[0].relative_to(DOCS).as_posix()
-                    lines.append(f"          - Slides: {rel}")
-                else:
-                    lines.append("          - Slides:")
-                    for page in slide_pages:
-                        rel = page.relative_to(DOCS).as_posix()
-                        lines.append(f"              - {page_label(page)}: {rel}")
 
     return lines
 
