@@ -4,7 +4,6 @@
 
 This project is a customer-facing assembly documentation system using:
 - MkDocs (Material theme)
-- MkSlides (Reveal.js)
 - Fusion 360 media exports (PNG + MP4)
 
 Documentation is modular and includes assemblies and variants.
@@ -18,7 +17,6 @@ Documentation is modular and includes assemblies and variants.
     [section]/
       index.md
       materials.md
-      slides.md
   /media/
     [section]/
   /data/
@@ -36,10 +34,10 @@ Rules:
 ## 3. Media Naming Rules
 
 Images:
-[step-name]_picture[x].png
+[section]_[step-number]_picture[x].png
 
 Videos:
-[step-name]_video[x].mp4
+[section]_[step-number]_video[x].mp4
 
 Rules:
 - lowercase only
@@ -62,19 +60,6 @@ Rules:
 - Instruction
 - Image
 - Optional video
-
----
-
-### slides.md
-
-# Step X
-Content
-
----
-
-Rules:
-- one step per slide
-- minimal text
 
 ---
 
@@ -155,4 +140,3 @@ MUST NOT:
 2. Section materials
 3. Global materials
 4. Docs
-5. Slides
