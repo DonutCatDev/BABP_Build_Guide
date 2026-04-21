@@ -4,3 +4,6 @@
 
 # Raw extracted reference image cache (generated from DOCX).
 refs/extracted-media/
+
+# Generated PDF export artifacts from site builds.
+site/**/*.pdf
