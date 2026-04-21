@@ -1,11 +1,5 @@
-# Tuning and Maintenance
+# Tuning/Maintenance
 
-## Scope
-This section is because you can tune a piano but you can't tuna fish.
+## Steps
 
-## Initial Guidance
-- Lube.
-- De-tension the blaster when stored long-term.
-
-## In Progress
-More wip, wow big surprise.
+No documented steps in the reference document for this section.

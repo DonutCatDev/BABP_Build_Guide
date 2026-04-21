@@ -15,11 +15,6 @@ theme:
 plugins:
   - search
   - glightbox
-  - exporter:
-      formats:
-        pdf:
-          enabled: true
-          concurrency: 1
 
 markdown_extensions:
   - admonition

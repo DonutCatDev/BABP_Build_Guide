@@ -1,10 +1,5 @@
 # Troubleshooting
 
-## Scope
-This is the troubleshooting section, have some simple filler below until it's filled out.
+## Steps
 
-## Initial Checks
-- Confirm barrel is fully seated.
-
-## In Progress
-Most of it is.
+No documented steps in the reference document for this section.

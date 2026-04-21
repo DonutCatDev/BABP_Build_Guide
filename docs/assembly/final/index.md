@@ -2,93 +2,118 @@
 
 [View Materials List](materials.md)
 
-## Overview
-This section combines the completed sub-assemblies into a working blaster and performs final fit/tension checks.
-
 ## Steps
 
-### Step 1: Install body bars
-- Insert both BodyBars into the StockAssembly with circular notch facing up.
-- Align side holes and lock with a quick-release pin.
+### Step 1
+You are almost there! All that's left is putting the final pieces together and you will have a working blaster.
 
-![Install body bars](../../media/other/placeholder.webp)
+![Step 1 image 1](../../media/final/final-step-01_picture1.png)
 
-### Step 2: Prepare transfer bar and turnaround
-- Remove TransferBarAdapter from TransferBar.
-- Slide TransferBar through Turnaround rear cutout until Pusher seals in Turnaround.
+### Step 2
+Insert both BodyBars into the StockAssembly with the circular notch facing up. Slide them in fully, making sure the notch aligns with the hold through the side of the StockAssembly, then insert a Quick-Release Pin to lock them in place.
 
-![Prepare transfer bar](../../media/other/placeholder.webp)
+![Step 2 image 1](../../media/final/final-step-02_picture1.png)
+![Step 2 image 2](../../media/final/final-step-02_picture2.png)
+![Step 2 image 3](../../media/final/final-step-02_picture3.png)
+![Step 2 image 4](../../media/final/final-step-02_picture4.png)
+![Step 2 image 5](../../media/final/final-step-02_picture5.png)
+![Step 2 image 6](../../media/final/final-step-02_picture6.png)
+![Step 2 image 7](../../media/final/final-step-02_picture7.png)
+![Step 2 image 8](../../media/final/final-step-02_picture8.png)
+![Step 2 image 9](../../media/final/final-step-02_picture9.png)
+![Step 2 image 10](../../media/final/final-step-02_picture10.png)
+![Step 2 image 11](../../media/final/final-step-02_picture11.png)
+![Step 2 image 12](../../media/final/final-step-02_picture12.png)
+![Step 2 image 13](../../media/final/final-step-02_picture13.png)
+![Step 2 image 14](../../media/final/final-step-02_picture14.png)
+![Step 2 image 15](../../media/final/final-step-02_picture15.png)
+![Step 2 image 16](../../media/final/final-step-02_picture16.png)
+![Step 2 image 17](../../media/final/final-step-02_picture17.png)
+![Step 2 image 18](../../media/final/final-step-02_picture18.png)
+![Step 2 image 19](../../media/final/final-step-02_picture19.png)
 
-### Step 3: Install turnaround assembly on body bars
-- Slide Turnaround, PlungerTube, and TransferBar assembly onto BodyBars.
-- Align stock nubs with Turnaround cutouts and seat fully flush.
+### Step 3
+Remove the TransferBarAdapter from the TransferBar and set it aside. Slide the TransferBar through the rectangular cutout on the backside of the Turnaround until the Pusher is sealed snugly into the back of the Turnaround.
 
-![Install turnaround assembly](../../media/other/placeholder.webp)
+![Step 3 image 1](../../media/final/final-step-03_picture1.png)
+![Step 3 image 2](../../media/final/final-step-03_picture2.png)
+![Step 3 image 3](../../media/final/final-step-03_picture3.png)
 
-### Step 4: Install tube spacer and tube holder
-- Install TubeSpacer with cutout facing rear toward Magwell.
-- Install TubeHolder with TubeHolderInsert facing away from PlungerTube.
-- Reattach TransferBarAdapter with cutout side down.
+### Step 4
+Slide the Turnaround, PlungerTube, and TransferBar Assembly onto the BodyBars. Make sure the nubs on the Stock line up with the cutouts on the back of the Turnaround, then slide the assembly on fully until the Turnaround is flush with the Stock.
 
-![Install tube hardware](../../media/other/placeholder.webp)
+![Step 4 image 1](../../media/final/final-step-04_picture1.png)
+![Step 4 image 2](../../media/final/final-step-04_picture2.png)
 
-### Step 5: Install receiver assembly
-- Slide ReceiverAssembly onto TubeHolder until flush.
+### Step 5
+Slide on the TubeSpacer, making sure the cutout is facing backwards towards the Magwell. Slide it on fully until it is flush with the Turnaround.
 
-![Install receiver assembly](../../media/other/placeholder.webp)
+![Step 5 image 1](../../media/final/final-step-05_picture1.png)
+![Step 5 image 2](../../media/final/final-step-05_picture2.png)
 
-### Step 6: Lubricate core interfaces
-- Apply lubricant to outer 127 o-rings on PlungerHead, inner 016 o-ring, and inside CatchEnd.
+### Step 6
+Slide on the TubeHolder, making sure the TubeHolderInsert is facing away from the PlungerTube and the TubeHolder slides over the PlungerTube locking it in place. Reattach the TransferBarAdapter, again making sure the side with the cutout faces down.
 
-![Lubricate core interfaces](../../media/other/placeholder.webp)
+![Step 6 image 1](../../media/final/final-step-06_picture1.png)
+![Step 6 image 2](../../media/final/final-step-06_picture2.png)
+![Step 6 image 3](../../media/final/final-step-06_picture3.png)
 
-### Step 7: Install core
-- Slide Core into PlungerTube through Receiver.
-- Seat PrimeBlock so raised rear section clicks behind TransferBarAdapter front section.
-- Confirm PlungerHead travels smoothly in PlungerTube.
+### Step 7
+Slide on the ReceiverAssembly until flush with the TubeHolder.
 
-![Install core](../../media/other/placeholder.webp)
+![Step 7 image 1](../../media/final/final-step-07_picture1.png)
 
-### Step 8: Install mid body
-- Slide selected MidBody onto Receiver, aligning dowels, nubs, and cutouts.
-- Seat fully flush.
+### Step 8
+Apply some Lube to the outer 127 O-Rings of the PlungerHead, the inner 016 O-Ring, as well as the inside of the CatchEnd.
 
-![Install mid body](../../media/other/placeholder.webp)
+![Step 8 image 1](../../media/final/final-step-08_picture1.png)
+![Step 8 image 2](../../media/final/final-step-08_picture2.png)
+![Step 8 image 3](../../media/final/final-step-08_picture3.png)
 
-### Step 9: Install barrel
-- Apply a light lube ring around Barrel about 1 inch from rear edge.
-- Insert Barrel through PrimeBlock until fully seated in Turnaround.
+### Step 9
+Slide the Core into the PlungerTube through the Receiver. Slide the Core all the way back, making sure the raised section on the back of the PrimeBlock clicks in behind the front section of the TransferBar Adapter. The PlungerHead should slide easily within the PlungerTube. If it does not, make sure to distribute the lube within the PlungerTube, applying more lube if necessary.
 
-![Install barrel](../../media/other/placeholder.webp)
+![Step 9 image 1](../../media/final/final-step-09_picture1.png)
+![Step 9 image 2](../../media/final/final-step-09_picture2.png)
 
-### Step 10: Install gear tensioner assembly
-- Slide GearTensionerAssembly onto front until flush with MidBody.
+### Step 10
+Slide on the MidBody of your choice. Make sure the dowels in the Receiver, as well as the nubs on both the middle of the Receiver and the top of the MidBody, line up and slot in cleanly. Slide the MidBody until flush with the Receiver, rotating the Handle out of the way if necessary.
 
-![Install gear tensioner](../../media/other/placeholder.webp)
+![Step 10 image 1](../../media/final/final-step-10_picture1.png)
+![Step 10 image 2](../../media/final/final-step-10_picture2.png)
 
-### Step 11: Pin and tension
-- Rotate OuterGear to align TensionerBlock hole with BodyBars notch.
-- Insert quick-release pin.
-- Hand-tighten OuterGear until assembly is stiff and no further hand rotation is possible.
+### Step 11
+Apply some Lube in a ring around the Barrel around 1in/2.5cm from the back edge, then insert the Barrel through the PrimeBlock all the way down the blaster until seated fully inside the Turnaround. You should feel a distinct thunk as the barrel seats inside the 016 O-Ring within the Turnaround.
 
-![Pin and tension](../../media/other/placeholder.webp)
+![Step 11 image 1](../../media/final/final-step-11_picture1.png)
+![Step 11 image 2](../../media/final/final-step-11_picture2.png)
 
-### Step 12: Lock barrel
-- Ensure Barrel is fully seated in Turnaround.
-- Tighten Gear Tensioner thumbscrew to lock barrel in place.
-- Do not overtighten.
+### Step 12
+Slide the GearTensionerAssembly onto the front of the blaster until flush with the MidBody.
 
-![Lock barrel](../../media/other/placeholder.webp)
+![Step 12 image 1](../../media/final/final-step-12_picture1.png)
 
-### Step 13: Optional SCAR install
-- Install two 016 o-rings on SCAR rear grooves.
-- Press SCAR onto barrel front until it snaps into place.
+### Step 13
+Turn the OuterGear until the hole in the TensionerBlock lines up with the notch in the BodyBars, then insert a Quick-Release Pin to secure it in place. Hand tighten the OuterGear to tension the blaster until the body is stiff and the OuterGear can no longer be turned by hand. Especially when using PLA or plastics that are susceptible to creep, it is advisable to de-tension the blaster when not in use.
 
-![Optional scar install](../../media/other/placeholder.webp)
+![Step 13 image 1](../../media/final/final-step-13_picture1.png)
+![Step 13 image 2](../../media/final/final-step-13_picture2.png)
+![Step 13 image 3](../../media/final/final-step-13_picture3.png)
 
-### Step 14: Functional check
-- Insert compatible magazine.
-- Prime until catch engages, then return handle forward to load.
-- In a safe direction, pull trigger to verify function.
+### Step 14
+Again making sure the Barrel is pushed back fully in place and seated as far as it will go within the Turnaround, tighten the Thumbscrew in the Gear Tensioner Assembly to lock the Barrel in place. You can use the hex socket to tighten the Thumbscrew to further secure the Barrel in place, as the LockBlocks within the Gear Tensioner will prevent the metal portion of the Thumbscrew from making contact with the Barrel. Still, be careful not to significantly overtighten to avoid crushing the barrel.
 
-![Functional check](../../media/other/placeholder.webp)
+![Step 14 image 1](../../media/final/final-step-14_picture1.png)
+![Step 14 image 2](../../media/final/final-step-14_picture2.png)
+
+### Step 15
+If using the optional SCAR, insert two 016 O-Rings into the grooves in the backside of the SCAR. Then push it firmly onto the front of the Barrel until the SCAR snaps into place, with the Barrel seated firmly within both 016 O-Rings.
+
+![Step 15 image 1](../../media/final/final-step-15_picture1.png)
+![Step 15 image 2](../../media/final/final-step-15_picture2.png)
+
+### Step 16
+[TODO animation of firing sequence]
+
+### Step 17
+The blaster is complete! Insert a standard talon compatible magazine, then prime the blaster by pulling the Handle back (rotating if necessary for bolt action variants) until the Catch clicks and the Plunger Sub Assembly is locked in the compressed position, then push the Handle back into the forward position to load a dart. Aiming the blaster in a safe direction, pull the Trigger to shoot a dart! Enjoy!

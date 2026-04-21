@@ -6,7 +6,11 @@
 	],
 	"settings": {
 		"chat.tools.terminal.autoApprove": {
-			".venv/Scripts/python.exe": true
+			".venv/Scripts/python.exe": true,
+			"set": true,
+			"unzip": true,
+			"s:/Project/buildguide_page/.venv/Scripts/python.exe": true,
+			"mkdocs": true
 		}
 	}
 }

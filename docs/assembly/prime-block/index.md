@@ -3,14 +3,13 @@
 [View Materials List](materials.md)
 
 ## Overview
-Prime block assembly has one shared build path and multiple action variants.
+There are 5 distinct priming blocks, depending on which action and side you prefer. They all share some common assembly, described below, as well as some specific assembly by prime block variant.
 
-## Build Paths
 - [Common Assembly](common-assembly.md)
 - [Bolt Action Assembly](bolt-action.md)
 - [Straight Pull Assembly](straight-pull.md)
 - [Dual Straight Pull Assembly](dual-straight-pull.md)
 
-## Notes
-- All variants share the common assembly steps first.
-- Use light pressure when seating bearings and avoid overtightening into printed threads.
+## Steps
+
+No documented steps in the reference document for this section.
