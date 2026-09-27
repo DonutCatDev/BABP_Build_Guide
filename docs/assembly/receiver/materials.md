@@ -4,7 +4,7 @@
 
 ### Components
 - Receiver
-- Trigger
+- Trigger ![Trigger](../../media/components/trigger.png){ .material-inline-image }
 - Sear
 - Grip
 - TriggerGuard

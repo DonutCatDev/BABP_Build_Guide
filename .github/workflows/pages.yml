@@ -33,6 +33,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
+      - name: Apply material images
+        run: python scripts/apply_material_images.py
+
       - name: Build site
         run: mkdocs build
 

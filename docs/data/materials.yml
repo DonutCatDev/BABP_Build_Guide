@@ -1,127 +1,128 @@
 components:
-  StockButt:
-  StockButtBackplate:
-  ReleaseNub:
-  Magwell:
-  RG_MainBody:
-  RG_Base:
-  RG_TopSupportBar:
-  RG_BottomSupportBar:
-  RG_BottomRail:
-  RGB_MainBody:
-  RGB_Base:
-  RGB_Insert:
-  RGB_TopSupportBar:
-  RGB_BottomSupportBar:
-  BipodCore:
-  RightLeg:
-  LeftLeg:
-  RightLockNub:
-  LeftLockNub:
-  BipodCap:
-  BipodButton:
-  BipodSubAssembly:
-  Receiver:
-  Trigger:
-  Sear:
-  Grip:
-  TriggerGuard:
-  FrontConnectorCap:
-  FrontConnectorBase:
-  TensionerBlock:
-  NutCap:
-  LockBlock:
-  LockBlockCap:
-  BarrelGear:
-  SideGear:
-  OuterGear:
-  InnerGear:
-  PrimeBlock:
-  PumpBars:
-  CatchLever:
   Barrel:
+  BarrelGear:
   Bearing_623:
-  HandleHead:
-  PlungerHead:
-  CatchTube:
-  CatchEnd:
-  SpringBase:
-  Spring:
+  BipodButton:
+  BipodCap:
+  BipodCore:
+  BipodSubAssembly:
+  BodyBars:
   Catch:
   CatchBearing:
+  CatchEnd:
+  CatchLever:
+  CatchTube:
+  CoreAssembly:
+  FrontConnectorBase:
+  FrontConnectorCap:
+  GearTensionerAssembly:
+  Grip:
+  HandleHead:
+  InnerGear:
+  LeftLeg:
+  LeftLockNub:
+  LockBlock:
+  LockBlockCap:
+  Magwell:
+  MidBody:
+  NutCap:
+  OuterGear:
+  PlungerHead:
+  PlungerTube:
+  PrimeBlock:
+  PumpBars:
   Pusher:
+  QuickReleasePin:
+  Receiver:
+  ReceiverAssembly:
+  ReleaseNub:
+  RG_Base:
+  RG_BottomRail:
+  RG_BottomSupportBar:
+  RG_MainBody:
+  RG_TopSupportBar:
+  RGB_Base:
+  RGB_BottomSupportBar:
+  RGB_Insert:
+  RGB_MainBody:
+  RGB_TopSupportBar:
+  RightLeg:
+  RightLockNub:
+  SCAR:
+  Sear:
+  SideGear:
+  Spring:
+  SpringBase:
+  StockButt:
+  StockButtBackplate:
+  TensionerBlock:
   TransferBar:
   TransferBarAdapter:
-  Turnaround:
+  Trigger:
+    image: components/trigger.png
+  TriggerGuard:
   TubeHolder:
   TubeHolderInsert:
-  PlungerTube:
-  BodyBars:
   TubeSpacer:
-  ReceiverAssembly:
-  CoreAssembly:
-  MidBody:
-  GearTensionerAssembly:
-  QuickReleasePin:
-  SCAR:
+  Turnaround:
 
 hardware:
-  screw_6_32_5_8_phillips:
-    label: "6-32 5/8\" Phillips Screw"
-  spring_0_625:
-    label: "0.625\" Compression Spring"
-  screw_6_32_socket_head:
-    label: "6-32 Socket Head Screw"
-  screw_6_32_phillips:
-    label: "6-32 Phillips Screw"
-  heat_set_insert_6_32:
-    label: "6-32 Heat Set Insert"
-  dowel_3_32:
-    label: "3/32 inch Dowel"
-  spring_bipod_lock:
-    label: "Bipod Lock Spring"
-  dowel_3_32_quarter:
-    label: "3/32 inch Dowel"
-  ptfe_tube_8mm:
-    label: "8 mm PTFE Tube"
-  dowel_3_32_3_4:
-    label: "3/32 inch Dowel, 3/4 inch"
-  nut_10_32:
-    label: "10-32 Nut"
-  screw_10_32_1_1_4_oval:
-    label: "10-32 Oval Head Screw, 1-1/4 inch"
-  washer_generic:
-    label: "Washer"
-  nut_6_32:
-    label: "6-32 Nut"
   bolt_6_32_5_8_socket:
     label: "6-32 Socket Head Bolt, 5/8 inch"
-  screw_6_32_5_16_phillips:
-    label: "6-32 Phillips Screw, 5/16 inch"
-  thumbscrew_6_32:
-    label: "6-32 Thumbscrew"
+  dowel_3_32:
+    label: "3/32 inch Dowel"
+  dowel_3_32_3_4:
+    label: "3/32 inch Dowel, 3/4 inch"
+  dowel_3_32_quarter:
+    label: "3/32 inch Dowel"
+  heat_set_insert_6_32:
+    label: "6-32 Heat Set Insert"
   m3_socket_head_8mm:
     label: "M3 Socket Head Screw, 8 mm"
-  screw_6_32_2in_phillips:
-    label: "6-32 Phillips Head Screw, 2 inch"
-  oring_127:
-    label: "127 O-Ring"
+  nut_10_32:
+    label: "10-32 Nut"
+  nut_6_32:
+    label: "6-32 Nut"
   oring_016:
     label: "016 O-Ring"
-  screw_1_4_20_3_8:
-    label: "1/4-20 Screw, 3/8 inch"
+  oring_127:
+    label: "127 O-Ring"
   oring_202:
     label: "202 O-Ring"
+  ptfe_tube_8mm:
+    label: "8 mm PTFE Tube"
   quick_release_pin:
     label: "Quick-Release Pin"
+  screw_10_32_1_1_4_oval:
+    label: "10-32 Oval Head Screw, 1-1/4 inch"
+  screw_1_4_20_3_8:
+    label: "1/4-20 Screw, 3/8 inch"
+  screw_6_32_2in_phillips:
+    label: "6-32 Phillips Head Screw, 2 inch"
+  screw_6_32_5_16_phillips:
+    label: "6-32 Phillips Screw, 5/16 inch"
+  screw_6_32_5_8_phillips:
+    label: "6-32 5/8\" Phillips Screw"
+  screw_6_32_phillips:
+    label: "6-32 Phillips Screw"
+  screw_6_32_socket_head:
+    label: "6-32 Socket Head Screw"
+  spring_0_625:
+    label: "0.625\" Compression Spring"
+  spring_bipod_lock:
+    label: "Bipod Lock Spring"
+  thumbscrew_6_32:
+    label: "6-32 Thumbscrew"
+  washer_generic:
+    label: "Washer"
 
 consumables:
-  superglue:
-    label: "Superglue"
   loctite:
     label: "Loctite"
   lubricant_light:
     label: "Light Lubricant"
+  superglue:
+    label: "Superglue"
 
 sections:
   stock-magwell:
