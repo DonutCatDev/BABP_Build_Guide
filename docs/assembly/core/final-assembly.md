@@ -5,16 +5,6 @@
 ### Step 1
 Slide the Catch onto the PrimeBlock Assembly as shown, until it is just in front of the CatchLever. Make sure the orientation of the Catch is correct, with the pointy side facing down and the larger side facing towards the PrimeBlock.
 
-![Step 1 image 1](../../media/core/final-assembly-step-01_picture1.png)
-![Step 1 image 2](../../media/core/final-assembly-step-01_picture2.png)
-![Step 1 image 3](../../media/core/final-assembly-step-01_picture3.png)
-![Step 1 image 4](../../media/core/final-assembly-step-01_picture4.png)
-![Step 1 image 5](../../media/core/final-assembly-step-01_picture5.png)
-![Step 1 image 6](../../media/core/final-assembly-step-01_picture6.png)
-![Step 1 image 7](../../media/core/final-assembly-step-01_picture7.png)
-![Step 1 image 8](../../media/core/final-assembly-step-01_picture8.png)
-![Step 1 image 9](../../media/core/final-assembly-step-01_picture9.png)
-![Step 1 image 10](../../media/core/final-assembly-step-01_picture10.png)
 ![Step 1 image 11](../../media/core/final-assembly-step-01_picture11.png)
 
 ### Step 2

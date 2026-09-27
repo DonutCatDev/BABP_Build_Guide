@@ -1,5 +1,4 @@
 # Troubleshooting
 
-## Steps
-
-No documented steps in the reference document for this section.
+!!! info "Baseline coverage"
+    The baseline guide does not provide a procedure for this section.

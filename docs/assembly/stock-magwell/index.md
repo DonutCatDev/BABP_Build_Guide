@@ -7,17 +7,6 @@
 ### Step 1
 Note: This step is optional. The StockButt can be used as is without StockButtBackplate. When printing StockButt out of a soft filament, e.g. TPU, however the StockButtBackplate can be useful to add rigidity and prevent the StockButt from peeling off the Stock and to have a more secure attachment point.
 
-![Step 1 image 1](../../media/stock-magwell/stock-magwell-step-01_picture1.png)
-![Step 1 image 2](../../media/stock-magwell/stock-magwell-step-01_picture2.png)
-![Step 1 image 3](../../media/stock-magwell/stock-magwell-step-01_picture3.png)
-![Step 1 image 4](../../media/stock-magwell/stock-magwell-step-01_picture4.png)
-![Step 1 image 5](../../media/stock-magwell/stock-magwell-step-01_picture5.png)
-![Step 1 image 6](../../media/stock-magwell/stock-magwell-step-01_picture6.png)
-![Step 1 image 7](../../media/stock-magwell/stock-magwell-step-01_picture7.png)
-![Step 1 image 8](../../media/stock-magwell/stock-magwell-step-01_picture8.png)
-![Step 1 image 9](../../media/stock-magwell/stock-magwell-step-01_picture9.png)
-![Step 1 image 10](../../media/stock-magwell/stock-magwell-step-01_picture10.png)
-![Step 1 image 11](../../media/stock-magwell/stock-magwell-step-01_picture11.png)
 ![Step 1 image 12](../../media/stock-magwell/stock-magwell-step-01_picture12.png)
 ![Step 1 image 13](../../media/stock-magwell/stock-magwell-step-01_picture13.png)
 ![Step 1 image 14](../../media/stock-magwell/stock-magwell-step-01_picture14.png)

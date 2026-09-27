@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -156,13 +158,23 @@ def replace_nav_block(original: str, nav_block: str) -> str:
     return original + "\n" + replacement + "\n"
 
 
-def main() -> None:
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Generate MkDocs navigation from docs/assembly.")
+    parser.add_argument("--check", action="store_true", help="Fail if mkdocs.yml is stale.")
+    args = parser.parse_args()
     nav_block = "\n".join(build_nav_lines())
     current = MKDOCS_YML.read_text(encoding="utf-8") if MKDOCS_YML.exists() else ""
     updated = replace_nav_block(current, nav_block)
+    if args.check:
+        if updated != current:
+            print("mkdocs.yml navigation is stale. Run: python scripts/generate_nav.py")
+            return 1
+        print("MkDocs navigation is current.")
+        return 0
     MKDOCS_YML.write_text(updated, encoding="utf-8")
     print("Updated mkdocs.yml navigation.")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

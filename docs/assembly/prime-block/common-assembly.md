@@ -5,23 +5,6 @@
 ### Step 1
 On the front side of the PrimeBlock, attach (2) 623 POM Bearings using (2) 8mm M3 Socket Head Screws inserted through the top. Be careful to make sure the screw goes through the center of the bearing and does not crush the bearing due to misalignment. Best practice is to insert a bearing, hold it in place with your finger, make sure the center holes align, then hand tighten the screw while being careful the bearing does not move out of position. Do not overtighten and strip the cut plastic threads, but just enough so the screw is fully inserted and the bearing is secure.
 
-![Step 1 image 1](../../media/prime-block/common-assembly-step-01_picture1.png)
-![Step 1 image 2](../../media/prime-block/common-assembly-step-01_picture2.png)
-![Step 1 image 3](../../media/prime-block/common-assembly-step-01_picture3.png)
-![Step 1 image 4](../../media/prime-block/common-assembly-step-01_picture4.png)
-![Step 1 image 5](../../media/prime-block/common-assembly-step-01_picture5.png)
-![Step 1 image 6](../../media/prime-block/common-assembly-step-01_picture6.png)
-![Step 1 image 7](../../media/prime-block/common-assembly-step-01_picture7.png)
-![Step 1 image 8](../../media/prime-block/common-assembly-step-01_picture8.png)
-![Step 1 image 9](../../media/prime-block/common-assembly-step-01_picture9.png)
-![Step 1 image 10](../../media/prime-block/common-assembly-step-01_picture10.png)
-![Step 1 image 11](../../media/prime-block/common-assembly-step-01_picture11.png)
-![Step 1 image 12](../../media/prime-block/common-assembly-step-01_picture12.png)
-![Step 1 image 13](../../media/prime-block/common-assembly-step-01_picture13.png)
-![Step 1 image 14](../../media/prime-block/common-assembly-step-01_picture14.png)
-![Step 1 image 15](../../media/prime-block/common-assembly-step-01_picture15.png)
-![Step 1 image 16](../../media/prime-block/common-assembly-step-01_picture16.png)
-![Step 1 image 17](../../media/prime-block/common-assembly-step-01_picture17.png)
 ![Step 1 image 18](../../media/prime-block/common-assembly-step-01_picture18.png)
 ![Step 1 image 19](../../media/prime-block/common-assembly-step-01_picture19.png)
 ![Step 1 image 20](../../media/prime-block/common-assembly-step-01_picture20.png)

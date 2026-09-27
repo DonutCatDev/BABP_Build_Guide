@@ -39,9 +39,9 @@ nav:
           - Overview: assembly/shroud/index.md
           - Materials: assembly/shroud/materials.md
           - Variants:
-              - Railgun Variant: assembly/shroud/railgun.md
-              - Bipod Variant: assembly/shroud/bipod.md
               - Bipod Sub-Assembly: assembly/shroud/bipod-sub-assembly.md
+              - Bipod Variant: assembly/shroud/bipod.md
+              - Railgun Variant: assembly/shroud/railgun.md
       - Gear Tensioner Assembly:
           - Overview: assembly/gear-tensioner/index.md
           - Materials: assembly/gear-tensioner/materials.md
@@ -52,16 +52,16 @@ nav:
           - Overview: assembly/prime-block/index.md
           - Materials: assembly/prime-block/materials.md
           - Variants:
-              - Common Assembly: assembly/prime-block/common-assembly.md
               - Bolt Action Assembly: assembly/prime-block/bolt-action.md
-              - Straight Pull Assembly: assembly/prime-block/straight-pull.md
+              - Common Assembly: assembly/prime-block/common-assembly.md
               - Dual Straight Pull Assembly: assembly/prime-block/dual-straight-pull.md
+              - Straight Pull Assembly: assembly/prime-block/straight-pull.md
       - Core Assembly:
           - Overview: assembly/core/index.md
           - Materials: assembly/core/materials.md
           - Variants:
-              - Plunger Sub-Assembly: assembly/core/plunger-sub-assembly.md
               - Final Assembly: assembly/core/final-assembly.md
+              - Plunger Sub-Assembly: assembly/core/plunger-sub-assembly.md
       - Loader Assembly:
           - Overview: assembly/loader/index.md
           - Materials: assembly/loader/materials.md

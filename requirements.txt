@@ -1,4 +1,6 @@
-mkdocs<2.0
-mkdocs-material
-mkdocs-glightbox
-pyyaml
+# Keep this file synchronized with pyproject.toml for pip-based CI and onboarding.
+mkdocs==1.6.1
+mkdocs-glightbox==0.5.2
+mkdocs-material==9.7.6
+python-docx==1.2.0
+PyYAML==6.0.3

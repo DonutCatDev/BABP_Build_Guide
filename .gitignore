@@ -7,3 +7,11 @@ refs/extracted-media/
 
 # Generated PDF export artifacts from site builds.
 site/**/*.pdf
+
+# MkDocs build output and local Python environments/caches.
+site/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/

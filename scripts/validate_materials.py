@@ -74,6 +74,16 @@ def validate_catalog_entry_shapes(catalog_name: str, catalog: dict, errors: list
             else:
                 # Allow bare object for future extensibility, but warn via fallback label
                 label = item_id
+            image = value.get("image")
+            if image is not None:
+                if not isinstance(image, str) or not image.strip():
+                    errors.append(f"{catalog_name}.{item_id}.image must be a non-empty string")
+                else:
+                    image_path = DOCS / "media" / image
+                    if not image_path.is_file():
+                        errors.append(
+                            f"{catalog_name}.{item_id}.image does not exist: docs/media/{image}"
+                        )
         else:
             errors.append(
                 f"{catalog_name}.{item_id} must be null, string, or mapping/object"
@@ -82,6 +92,12 @@ def validate_catalog_entry_shapes(catalog_name: str, catalog: dict, errors: list
 
         labels[item_id] = label
     return labels
+
+
+def validate_component_images(components: dict, errors: list[str]) -> None:
+    for item_id, value in components.items():
+        if not isinstance(value, dict) or not value.get("image"):
+            errors.append(f"components.{item_id} must define a reference image")
 
 
 def parse_quantity_mapping(item, label: str, errors: list[str]) -> tuple[str | None, int | None]:
@@ -168,13 +184,7 @@ def validate_material_group(
                 warnings.append(f"{group_name}.consumables contains duplicate reference: {item_id}")
             local_sets["consumables"].add(item_id)
 
-    if check_duplicates_against:
-        for kind in ("components", "hardware", "consumables"):
-            overlap = local_sets[kind] & check_duplicates_against[kind]
-            for item_id in sorted(overlap):
-                warnings.append(
-                    f"{group_name}.{kind} duplicates base item {item_id}; keep shared items in base where possible"
-                )
+    # A variant may intentionally add to a base quantity, so overlap is valid.
 
 
 def validate_sections(
@@ -244,15 +254,16 @@ def validate_section_folders(sections: dict, errors: list[str], warnings: list[s
         warnings.append(f"Assembly directory not found: {ASSEMBLY_DIR}")
         return
 
-    folder_ids = {p.name for p in ASSEMBLY_DIR.iterdir() if p.is_dir()}
+    folder_ids = {
+        p.name
+        for p in ASSEMBLY_DIR.iterdir()
+        if p.is_dir() and (p / "materials.md").exists()
+    }
 
     missing_folders = sorted(yaml_section_ids - folder_ids)
-    extra_folders = sorted(folder_ids - yaml_section_ids)
 
     for section_id in missing_folders:
         warnings.append(f"Section defined in materials.yml but missing docs folder: docs/assembly/{section_id}")
-    for folder_id in extra_folders:
-        warnings.append(f"Docs folder exists without YAML section entry: docs/assembly/{folder_id}")
 
     required_pages = ("index.md", "materials.md")
     for folder_id in sorted(folder_ids & yaml_section_ids):
@@ -295,6 +306,7 @@ def main() -> int:
         "hardware": validate_catalog_entry_shapes("hardware", hardware, errors),
         "consumables": validate_catalog_entry_shapes("consumables", consumables, errors),
     }
+    validate_component_images(components, errors)
 
     collect_duplicate_labels(catalogs, warnings)
 

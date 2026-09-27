@@ -5,21 +5,6 @@
 ### Step 1
 Insert the RightLeg into the right side of the Core, then secure it with a 6-32 ⅝“ Socket Head Screw. Make sure the indent in the RightLeg faces inwards, otherwise you may have put it on the wrong side.
 
-![Step 1 image 1](../../media/shroud/bipod-sub-assembly-step-01_picture1.png)
-![Step 1 image 2](../../media/shroud/bipod-sub-assembly-step-01_picture2.png)
-![Step 1 image 3](../../media/shroud/bipod-sub-assembly-step-01_picture3.png)
-![Step 1 image 4](../../media/shroud/bipod-sub-assembly-step-01_picture4.png)
-![Step 1 image 5](../../media/shroud/bipod-sub-assembly-step-01_picture5.png)
-![Step 1 image 6](../../media/shroud/bipod-sub-assembly-step-01_picture6.png)
-![Step 1 image 7](../../media/shroud/bipod-sub-assembly-step-01_picture7.png)
-![Step 1 image 8](../../media/shroud/bipod-sub-assembly-step-01_picture8.png)
-![Step 1 image 9](../../media/shroud/bipod-sub-assembly-step-01_picture9.png)
-![Step 1 image 10](../../media/shroud/bipod-sub-assembly-step-01_picture10.png)
-![Step 1 image 11](../../media/shroud/bipod-sub-assembly-step-01_picture11.png)
-![Step 1 image 12](../../media/shroud/bipod-sub-assembly-step-01_picture12.png)
-![Step 1 image 13](../../media/shroud/bipod-sub-assembly-step-01_picture13.png)
-![Step 1 image 14](../../media/shroud/bipod-sub-assembly-step-01_picture14.png)
-![Step 1 image 15](../../media/shroud/bipod-sub-assembly-step-01_picture15.png)
 ![Step 1 image 16](../../media/shroud/bipod-sub-assembly-step-01_picture16.png)
 ![Step 1 image 17](../../media/shroud/bipod-sub-assembly-step-01_picture17.png)
 ![Step 1 image 18](../../media/shroud/bipod-sub-assembly-step-01_picture18.png)

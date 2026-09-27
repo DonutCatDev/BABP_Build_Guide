@@ -31,6 +31,25 @@ SECTION_DIR_BY_TITLE = {
 
 MAIN_SECTION_TITLES = list(SECTION_DIR_BY_TITLE)
 
+# The baseline DOCX anchors each section's bill-of-materials images immediately
+# before the first procedural image. Word exposes all of those anchors on the
+# same paragraph, so retain them as source assets but embed only images at or
+# after the documented procedure boundary.
+PROCEDURE_IMAGE_START = {
+    ("stock-magwell", "index", 1): 12,
+    ("shroud", "railgun", 1): 15,
+    ("shroud", "bipod-sub-assembly", 1): 16,
+    ("shroud", "bipod", 1): 16,
+    ("receiver", "index", 1): 16,
+    ("prime-block", "common-assembly", 1): 18,
+    ("prime-block", "dual-straight-pull", 1): 22,
+    ("core", "plunger-sub-assembly", 1): 24,
+    ("core", "final-assembly", 1): 11,
+    ("loader", "index", 1): 10,
+    ("turnaround", "index", 1): 9,
+    ("final", "index", 1): 17,
+}
+
 
 @dataclass
 class Para:
@@ -147,6 +166,8 @@ def render_page(
     page_slug: str,
     doc: Document,
     mappings: list[dict[str, str]],
+    asset_step_offset: int = 0,
+    asset_step_numbers: list[int] | None = None,
 ) -> str:
     lines: list[str] = [f"# {title}", ""]
 
@@ -161,15 +182,24 @@ def render_page(
             lines.append(line)
             lines.append("")
 
+    if not steps:
+        if not overview_lines:
+            lines.extend([
+                "!!! info \"Baseline coverage\"",
+                "    The baseline guide does not provide a procedure for this section.",
+                "",
+            ])
+        return "\n".join(lines).rstrip() + "\n"
+
     lines.append("## Steps")
     lines.append("")
 
-    if not steps:
-        lines.append("No documented steps in the reference document for this section.")
-        lines.append("")
-        return "\n".join(lines).rstrip() + "\n"
-
     for idx, step in enumerate(steps, start=1):
+        asset_step_idx = (
+            asset_step_numbers[idx - 1]
+            if asset_step_numbers is not None
+            else idx + asset_step_offset
+        )
         lines.append(f"### Step {idx}")
         lines.append(step.text)
         lines.append("")
@@ -184,11 +214,17 @@ def render_page(
             by_ext[ext] = by_ext.get(ext, 0) + 1
             image_idx = by_ext[ext]
 
+            # Word documents can contain tiny spacer/placeholder images. Count
+            # their position to keep later filenames stable, but do not export
+            # or embed them.
+            if len(part.blob) <= 100:
+                continue
+
             media_dir = MEDIA_ROOT / media_section
             media_dir.mkdir(parents=True, exist_ok=True)
 
             base = page_slug if page_slug != "index" else media_section
-            target_name = f"{base}-step-{idx:02d}_picture{image_idx}{ext}"
+            target_name = f"{base}-step-{asset_step_idx:02d}_picture{image_idx}{ext}"
             target_path = media_dir / target_name
 
             target_path.write_bytes(part.blob)
@@ -201,6 +237,11 @@ def render_page(
                     "step": f"{media_section}/{page_slug}#{idx}",
                 }
             )
+            procedure_start = PROCEDURE_IMAGE_START.get(
+                (media_section, page_slug, idx), 1
+            )
+            if image_idx < procedure_start:
+                continue
             lines.append(f"![Step {idx} image {image_idx}](../../media/{media_section}/{target_name})")
         if step.image_rids:
             lines.append("")
@@ -349,16 +390,31 @@ def main() -> None:
 
     # Gear tensioner
     start, end = bounds["Gear Tensioner Assembly"]
+    gear_steps = build_steps(paras, start + 1, end)
+    gear_procedure = gear_steps[3:]
+    # The baseline separates the glue warning from its instruction while
+    # anchoring all three photos to the warning. They are one operation.
+    if len(gear_procedure) >= 2 and gear_procedure[0].text.lower().startswith("warning:"):
+        gear_procedure = [
+            Step(
+                text=f"{gear_procedure[0].text}\n\n{gear_procedure[1].text}",
+                image_rids=gear_procedure[0].image_rids + gear_procedure[1].image_rids,
+            ),
+            *gear_procedure[2:],
+        ]
     write_page(
         "gear-tensioner/index.md",
         render_page(
             title="Gear Tensioner Assembly",
             overview_lines=[],
-            steps=build_steps(paras, start + 1, end),
+            # The first three DOCX paragraphs are material inventories, not
+            # procedural steps; materials.yml owns that content.
+            steps=gear_procedure,
             media_section="gear-tensioner",
             page_slug="index",
             doc=doc,
             mappings=mappings,
+            asset_step_numbers=[4, 6, 7, 8, 9, 10, 11],
         ),
     )
 
@@ -510,12 +566,13 @@ def main() -> None:
         "core/plunger-sub-assembly.md",
         render_page(
             title="Plunger Sub Assembly",
-            overview_lines=[],
-            steps=build_steps(paras, plunger_start, plunger_end),
+            overview_lines=[build_steps(paras, plunger_start, plunger_end)[0].text],
+            steps=build_steps(paras, plunger_start, plunger_end)[1:],
             media_section="core",
             page_slug="plunger-sub-assembly",
             doc=doc,
             mappings=mappings,
+            asset_step_offset=1,
         ),
     )
     write_page(
@@ -533,46 +590,52 @@ def main() -> None:
 
     # Loader
     start, end = bounds["Loader Assembly"]
+    loader_steps = build_steps(paras, start + 1, end)
     write_page(
         "loader/index.md",
         render_page(
             title="Loader Assembly",
-            overview_lines=[],
-            steps=build_steps(paras, start + 1, end),
+            overview_lines=[loader_steps[0].text],
+            steps=loader_steps[1:],
             media_section="loader",
             page_slug="index",
             doc=doc,
             mappings=mappings,
+            asset_step_offset=1,
         ),
     )
 
     # Turnaround
     start, end = bounds["Turnaround Assembly"]
+    turnaround_steps = build_steps(paras, start + 1, end)
     write_page(
         "turnaround/index.md",
         render_page(
             title="Turnaround Assembly",
-            overview_lines=[],
-            steps=build_steps(paras, start + 1, end),
+            overview_lines=[turnaround_steps[0].text],
+            steps=turnaround_steps[1:],
             media_section="turnaround",
             page_slug="index",
             doc=doc,
             mappings=mappings,
+            asset_step_offset=1,
         ),
     )
 
     # Final
     start, end = bounds["Final Assembly"]
+    final_steps = build_steps(paras, start + 1, end)
     write_page(
         "final/index.md",
         render_page(
             title="Final Assembly",
-            overview_lines=[],
-            steps=build_steps(paras, start + 1, end),
+            overview_lines=[final_steps[0].text],
+            steps=final_steps[1:],
             media_section="final",
             page_slug="index",
             doc=doc,
             mappings=mappings,
+            asset_step_offset=1,
         ),
     )
 

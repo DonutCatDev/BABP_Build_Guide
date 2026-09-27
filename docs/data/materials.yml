@@ -1,70 +1,188 @@
 components:
+  Stock:
+    image: stock-magwell/stock-magwell-step-01_picture1.png
+  Release:
+    image: stock-magwell/stock-magwell-step-01_picture9.png
   Barrel:
+    image: prime-block/common-assembly-step-01_picture14.png
   BarrelGear:
+    image: gear-tensioner/gear-tensioner-step-06_picture3.png
   Bearing_623:
+    label: 623 POM Bearing
+    image: prime-block/common-assembly-step-01_picture2.png
   BipodButton:
+    label: Bipod Button
+    image: shroud/bipod-sub-assembly-step-01_picture7.png
   BipodCap:
+    label: Bipod Cap
+    image: shroud/bipod-sub-assembly-step-01_picture8.png
   BipodCore:
+    label: Bipod Core
+    image: shroud/bipod-sub-assembly-step-01_picture9.png
   BipodSubAssembly:
+    label: Bipod Sub-Assembly
+    image: shroud/bipod-sub-assembly-step-01_picture1.png
   BodyBars:
+    label: Body Bars
+    image: final/final-step-02_picture8.png
   Catch:
+    image: core/final-assembly-step-01_picture3.png
   CatchBearing:
+    label: Catch Bearing
+    image: core/final-assembly-step-01_picture8.png
   CatchEnd:
+    label: Catch End
+    image: core/plunger-sub-assembly-step-02_picture3.png
   CatchLever:
+    label: Catch Lever
+    image: prime-block/common-assembly-step-01_picture12.png
   CatchTube:
+    label: Catch Tube
+    image: core/plunger-sub-assembly-step-02_picture20.png
   CoreAssembly:
+    label: Core Assembly
+    image: final/final-step-02_picture5.png
   FrontConnectorBase:
+    label: Front Connector Base
+    image: gear-tensioner/gear-tensioner-step-08_picture1.png
   FrontConnectorCap:
+    label: Front Connector Cap
+    image: gear-tensioner/gear-tensioner-step-06_picture1.png
   GearTensionerAssembly:
+    label: Gear Tensioner Assembly
+    image: final/final-step-02_picture3.png
   Grip:
+    image: receiver/receiver-step-01_picture3.png
   HandleHead:
+    label: Handle Head
+    image: prime-block/dual-straight-pull-step-01_picture3.png
   InnerGear:
+    label: Inner Gear
+    image: gear-tensioner/gear-tensioner-step-04_picture3.png
   LeftLeg:
+    label: Left Leg
+    image: shroud/bipod-sub-assembly-step-01_picture6.png
   LeftLockNub:
+    label: Left Lock Nub
+    image: shroud/bipod-sub-assembly-step-01_picture11.png
   LockBlock:
+    label: Lock Block
+    image: gear-tensioner/gear-tensioner-step-10_picture3.png
   LockBlockCap:
+    label: Lock Block Cap
+    image: gear-tensioner/gear-tensioner-step-10_picture4.png
   Magwell:
+    image: stock-magwell/stock-magwell-step-01_picture10.png
   MidBody:
+    label: Mid Body
+    image: final/final-step-02_picture10.png
   NutCap:
+    label: Nut Cap
+    image: gear-tensioner/gear-tensioner-step-07_picture2.png
   OuterGear:
+    label: Outer Gear
+    image: gear-tensioner/gear-tensioner-step-06_picture5.png
   PlungerHead:
+    label: Plunger Head
+    image: core/plunger-sub-assembly-step-02_picture1.png
   PlungerTube:
+    label: Plunger Tube
+    image: turnaround/turnaround-step-02_picture6.png
   PrimeBlock:
+    label: Prime Block
+    image: prime-block/common-assembly-step-01_picture18.png
   PumpBars:
+    label: Pump Bars
+    image: prime-block/common-assembly-step-01_picture15.png
   Pusher:
-  QuickReleasePin:
+    image: loader/loader-step-02_picture3.png
   Receiver:
+    image: receiver/receiver-step-01_picture2.png
   ReceiverAssembly:
+    label: Receiver Assembly
+    image: final/final-step-02_picture4.png
   ReleaseNub:
+    label: Release Nub
+    image: stock-magwell/stock-magwell-step-01_picture7.png
   RG_Base:
+    label: Railgun Base
+    image: shroud/railgun-step-01_picture2.png
   RG_BottomRail:
+    label: Railgun Bottom Rail
+    image: shroud/railgun-step-01_picture3.png
   RG_BottomSupportBar:
+    label: Railgun Bottom Support Bar
+    image: shroud/railgun-step-01_picture5.png
   RG_MainBody:
+    label: Railgun Main Body
+    image: shroud/railgun-step-01_picture1.png
   RG_TopSupportBar:
+    label: Railgun Top Support Bar
+    image: shroud/railgun-step-01_picture4.png
   RGB_Base:
+    label: Bipod Shroud Base
+    image: shroud/bipod-step-01_picture10.png
   RGB_BottomSupportBar:
+    label: Bipod Shroud Bottom Support Bar
+    image: shroud/bipod-step-01_picture3.png
   RGB_Insert:
+    label: Bipod Shroud Insert
+    image: shroud/bipod-step-01_picture12.png
   RGB_MainBody:
+    label: Bipod Shroud Main Body
+    image: shroud/bipod-step-01_picture11.png
   RGB_TopSupportBar:
+    label: Bipod Shroud Top Support Bar
+    image: shroud/bipod-step-01_picture2.png
   RightLeg:
+    label: Right Leg
+    image: shroud/bipod-sub-assembly-step-01_picture5.png
   RightLockNub:
+    label: Right Lock Nub
+    image: shroud/bipod-sub-assembly-step-01_picture10.png
   SCAR:
+    image: final/final-step-13_picture1.png
   Sear:
+    image: receiver/receiver-step-01_picture9.png
   SideGear:
+    label: Side Gear
+    image: gear-tensioner/gear-tensioner-step-06_picture4.png
   Spring:
+    image: core/plunger-sub-assembly-step-02_picture2.png
   SpringBase:
+    label: Spring Base
+    image: core/plunger-sub-assembly-step-02_picture4.png
   StockButt:
+    label: Stock Butt
+    image: stock-magwell/stock-magwell-step-01_picture3.png
   StockButtBackplate:
+    label: Stock Butt Backplate
+    image: stock-magwell/stock-magwell-step-01_picture2.png
   TensionerBlock:
+    label: Tensioner Block
+    image: gear-tensioner/gear-tensioner-step-07_picture1.png
   TransferBar:
+    label: Transfer Bar
+    image: loader/loader-step-02_picture5.png
   TransferBarAdapter:
+    label: Transfer Bar Adapter
+    image: loader/loader-step-02_picture4.png
   Trigger:
-    image: components/trigger.png
+    image: receiver/receiver-step-01_picture8.png
   TriggerGuard:
+    label: Trigger Guard
+    image: receiver/receiver-step-01_picture1.png
   TubeHolder:
+    label: Tube Holder
+    image: turnaround/turnaround-step-02_picture4.png
   TubeHolderInsert:
+    label: Tube Holder Insert
+    image: turnaround/turnaround-step-02_picture5.png
   TubeSpacer:
+    label: Tube Spacer
+    image: final/install-tube-spacer-and-tube-holder_picture1.png
   Turnaround:
+    image: turnaround/turnaround-step-02_picture11.png
 
 hardware:
   bolt_6_32_5_8_socket:
@@ -74,7 +192,7 @@ hardware:
   dowel_3_32_3_4:
     label: "3/32 inch Dowel, 3/4 inch"
   dowel_3_32_quarter:
-    label: "3/32 inch Dowel"
+    label: "3/32 inch Dowel, 1/4 inch"
   heat_set_insert_6_32:
     label: "6-32 Heat Set Insert"
   m3_socket_head_8mm:
@@ -128,9 +246,11 @@ sections:
   stock-magwell:
     base:
       components:
+        - Stock
         - StockButt
         - StockButtBackplate
         - ReleaseNub
+        - Release
         - Magwell
       hardware:
         - screw_6_32_5_8_phillips: 2
@@ -139,10 +259,7 @@ sections:
         - superglue
 
   shroud:
-    base:
-      hardware:
-        - screw_6_32_socket_head: 0
-        - screw_6_32_phillips: 0
+    base: {}
     variants:
       railgun:
         components:

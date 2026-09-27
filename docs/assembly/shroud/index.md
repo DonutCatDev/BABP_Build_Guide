@@ -10,7 +10,3 @@ The shroud has two variants documented in the reference guide:
 - [Railgun Bipod Variant](bipod.md)
 
 - [Bipod Sub Assembly](bipod-sub-assembly.md)
-
-## Steps
-
-No documented steps in the reference document for this section.

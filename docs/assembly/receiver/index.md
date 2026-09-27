@@ -7,21 +7,6 @@
 ### Step 1
 Take an 8mm PTFE Tube and insert it into the pivot hole of the Trigger (first and second photos). If it does not fit in you may need to file out the hole and/or adjust printer tolerances. Confirm that a 3/32in by  ¾ in Dowel fits through the inserted tube and can rotate freely (third photo), then remove the 3/32in by  ¾ in Dowel and set it aside. Repeat the same for the Sear (third to sixth photos).
 
-![Step 1 image 1](../../media/receiver/receiver-step-01_picture1.png)
-![Step 1 image 2](../../media/receiver/receiver-step-01_picture2.png)
-![Step 1 image 3](../../media/receiver/receiver-step-01_picture3.png)
-![Step 1 image 4](../../media/receiver/receiver-step-01_picture4.png)
-![Step 1 image 5](../../media/receiver/receiver-step-01_picture5.png)
-![Step 1 image 6](../../media/receiver/receiver-step-01_picture6.png)
-![Step 1 image 7](../../media/receiver/receiver-step-01_picture7.png)
-![Step 1 image 8](../../media/receiver/receiver-step-01_picture8.png)
-![Step 1 image 9](../../media/receiver/receiver-step-01_picture9.png)
-![Step 1 image 10](../../media/receiver/receiver-step-01_picture10.png)
-![Step 1 image 11](../../media/receiver/receiver-step-01_picture11.png)
-![Step 1 image 12](../../media/receiver/receiver-step-01_picture12.png)
-![Step 1 image 13](../../media/receiver/receiver-step-01_picture13.png)
-![Step 1 image 14](../../media/receiver/receiver-step-01_picture14.png)
-![Step 1 image 15](../../media/receiver/receiver-step-01_picture15.png)
 ![Step 1 image 16](../../media/receiver/receiver-step-01_picture16.png)
 ![Step 1 image 17](../../media/receiver/receiver-step-01_picture17.png)
 ![Step 1 image 18](../../media/receiver/receiver-step-01_picture18.png)
