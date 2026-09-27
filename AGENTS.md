@@ -91,7 +91,7 @@ python scripts/dev.py build     # regenerate and build site/
 python scripts/dev.py serve     # regenerate and serve locally
 ```
 
-`check` is the required completion gate. It validates the material model, required component images, generated file currency, local links, navigation, and a strict MkDocs build.
+`check` is the required completion gate. It validates the Python version, dependency declaration synchronization, material model, required component images, generated file currency, local Markdown/HTML links, navigation, and a strict MkDocs build.
 
 The Material for MkDocs toolchain may print its known MkDocs 2.0 informational notice while completing successfully. Do not use that known notice to dismiss other warnings or failures.
 

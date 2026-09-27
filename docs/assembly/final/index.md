@@ -95,7 +95,8 @@ If using the optional SCAR, insert two 016 O-Rings into the grooves in the backs
 ![Step 14 image 2](../../media/final/final-step-15_picture2.png)
 
 ### Step 15
-[TODO animation of firing sequence]
+!!! info "Source limitation"
+    The baseline guide references a firing-sequence animation, but the animation was not included in the available source material.
 
 ### Step 16
 The blaster is complete! Insert a standard talon compatible magazine, then prime the blaster by pulling the Handle back (rotating if necessary for bolt action variants) until the Catch clicks and the Plunger Sub Assembly is locked in the compressed position, then push the Handle back into the forward position to load a dart. Aiming the blaster in a safe direction, pull the Trigger to shoot a dart! Enjoy!

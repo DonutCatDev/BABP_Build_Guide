@@ -625,6 +625,13 @@ def main() -> None:
     # Final
     start, end = bounds["Final Assembly"]
     final_steps = build_steps(paras, start + 1, end)
+    for step in final_steps:
+        if step.text.lower().startswith("[todo animation of firing sequence"):
+            step.text = (
+                '!!! info "Source limitation"\n'
+                "    The baseline guide references a firing-sequence animation, but the "
+                "animation was not included in the available source material."
+            )
     write_page(
         "final/index.md",
         render_page(

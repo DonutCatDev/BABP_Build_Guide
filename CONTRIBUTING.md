@@ -4,7 +4,7 @@ This is the operational guide for maintaining and extending the BABP assembly si
 
 ## Quick start
 
-Requirements: Python 3.12 and Git.
+Requirements: Python 3.12 or 3.13 and Git.
 
 PowerShell:
 
@@ -71,6 +71,9 @@ scripts/
 mkdocs.yml                         Site configuration
 requirements.txt                   Python dependencies
 site/                              Ignored build output
+.github/workflows/
+  ci.yml                           Pull-request validation
+  pages.yml                        Main-branch validation and Pages deployment
 ```
 
 Media belongs to the assembly section that primarily owns it, even when another page references it as a component image.
@@ -308,7 +311,7 @@ python scripts/dev.py build     Regenerate and build site/
 python scripts/dev.py serve     Regenerate and start live reload
 ```
 
-`check` verifies material schema and references, component images, generated-file currency, local links, navigation, and a strict MkDocs build. Run it before committing; CI repeats these checks.
+`check` verifies the supported Python version, dependency-file synchronization, material schema and references, component images, generated-file currency, local Markdown/HTML links, navigation, and a strict MkDocs build. Run it before committing. Pull requests run the same checks through `ci.yml`; pushes to `main` repeat them before deployment through `pages.yml`.
 
 Commit generated material Markdown and the generated navigation block because their diffs are reviewable. Do not commit `site/`, `.venv/`, caches, or editor-local state. Investigate surprising generated diffs rather than accepting them blindly.
 

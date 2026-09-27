@@ -6,7 +6,7 @@ Source and build tooling for the MkDocs-based BABP assembly guide.
 
 Requirements:
 
-- Python 3.12
+- Python 3.12 or 3.13
 - Git
 
 PowerShell:
